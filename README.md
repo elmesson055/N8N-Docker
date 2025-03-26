@@ -10,12 +10,12 @@ Automated workflow automation tool running in Docker with persistent storage.
 
 1. **Criar arquivo de ambiente**:
    ```bash
-   cd C:\Users\elmessonjesus\Desktop\N8N-Docker
+   cd C:\Users\***********\Desktop\N8N-Docker
    notepad .env
 
    Adicione estas variáveis (altere USER e PASSWORD):
 
-   DATA_PATH=C:\Users\elmessonjesus\Desktop\N8N-Docker\n8n-data
+   DATA_PATH=C:\Users\************\Desktop\N8N-Docker\n8n-data
 
 
 N8N_BASIC_AUTH_USER=seu_usuario
@@ -35,12 +35,12 @@ TZ=America/Sao_Paulo
 ## Persistência de Dados
 - Todos os workflows são armazenados em:
 
-C:\Users\elmessonjesus\Desktop\N8N-Docker\n8n-data
+C:\Users\***********\Desktop\N8N-Docker\n8n-data
 
 
 Para resetar permissões (execute como Admin):
 
-icacls "C:\Users\elmessonjesus\Desktop\N8N-Docker\n8n-data" /grant:r "Everyone:(OI)(CI)F"
+icacls "C:\Users\***********\Desktop\N8N-Docker\n8n-data" /grant:r "Everyone:(OI)(CI)F"
 
 ## Comandos Úteis Descrição Comando Parar container
 
