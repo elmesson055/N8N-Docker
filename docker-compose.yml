@@ -1,0 +1,26 @@
+version: '3'
+services:
+  n8n:
+    image: n8nio/n8n
+    restart: unless-stopped
+    ports:
+      - "5678:5678"
+    user: node  # Run as node user to match volume permissions
+    volumes:
+      - ${DATA_PATH}:/home/node/.n8n:z  # 'z' flag for SELinux/WSL2 context sharing
+    environment:
+      - TZ=America/Sao_Paulo  # Add timezone for consistent timestamps
+      - N8N_HOST=host.docker.internal
+      - DATA_PATH=${DATA_PATH}
+      - N8N_PORT=5678
+      - N8N_PROTOCOL=http
+      - N8N_BASIC_AUTH_USER=user
+      - N8N_BASIC_AUTH_PASSWORD=password
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    networks:
+      - n8n-network
+
+networks:
+  n8n-network:
+    driver: bridge

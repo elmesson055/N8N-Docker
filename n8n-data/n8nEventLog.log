@@ -1,0 +1,2 @@
+{"__type":"$$EventMessageAudit","id":"e2e9c696-1e2d-4fef-b0bd-4e71c537aeb0","ts":"2025-03-26T13:52:35.378+00:00","eventName":"n8n.audit.user.login.failed","message":"n8n.audit.user.login.failed","payload":{"authenticationMethod":"email","userEmail":"elmesson.ribeiro@gmail.com","reason":"wrong credentials"}}
+{"__type":"$$EventMessageConfirm","confirm":"e2e9c696-1e2d-4fef-b0bd-4e71c537aeb0","ts":"2025-03-26T13:52:35.378+00:00","source":{"id":"0","name":"eventBus"}}
